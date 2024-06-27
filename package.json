@@ -1,0 +1,13 @@
+{
+  "name": "tlp1-segundo_parcial-quiroga_juan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev":"node --watch ./src/libros.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,22 +1,22 @@
-const infoLibros = [
-    {
-        id : 1,
-        title: "El Señor De Los Anillos",
-        author: "J. R. R. Tolkien",
-        year: 1995
-    },
-    {
-        id : 2,
-        title: "It (eso)",
-        author: "Stephen King",
-        year: 1986
-    },
-    {
-        id : 3,
-        title: "Las ventajas de ser invisible",
-        author: "Stephen Chbosky",
-        year: 1999
-    }
+const infoLibros = [ //Era solamente para realizar pruebas
+    // {
+    //     id : 1,
+    //     title: "El Señor De Los Anillos",
+    //     author: "J. R. R. Tolkien",
+    //     year: 1995
+    // },
+    // {
+    //     id : 2,
+    //     title: "It (eso)",
+    //     author: "Stephen King",
+    //     year: 1986
+    // },
+    // {
+    //     id : 3,
+    //     title: "Las ventajas de ser invisible",
+    //     author: "Stephen Chbosky",
+    //     year: 1999
+    // }
 ]
 
 const obtenerLibros = (req, res) =>{

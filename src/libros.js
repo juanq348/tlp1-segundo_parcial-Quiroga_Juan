@@ -57,4 +57,15 @@ app.put("/books/:id", (req, res) =>{
     res.json({message:"Se actualizo el libro de forma exitosa"})
 })
 
+app.delete("/books/:id", (req,res) =>{
+    const id = req.params.id
+
+    const obtenerTitle = infoLibros.find((title) => title.id == id)
+    const indexTitle = infoLibros.indexOf(obtenerTitle)
+    const titleBorrado = infoLibros.splice(indexTitle, 1)
+
+    res.json({message: "Se borró el libro correctamente", titleBorrado})
+})
+
+
 app.listen(3000, console.log("Servidor iniciado"))

@@ -45,4 +45,16 @@ app.post("/books", (req, res) =>{
     res.json({message: "Se agrego el libro correctamente", nuevoLibro})
 })
 
+app.put("/books/:id", (req, res) =>{
+    const id = req.params.id
+    const {title, author, year} = req.body
+
+    const obtenerTitle = infoLibros.find((title) => title.id == id)
+    obtenerTitle.title = title
+    obtenerTitle.author = author
+    obtenerTitle.year = year
+    
+    res.json({message:"Se actualizo el libro de forma exitosa"})
+})
+
 app.listen(3000, console.log("Servidor iniciado"))
